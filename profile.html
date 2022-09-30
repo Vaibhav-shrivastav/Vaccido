@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2>Welcome ${u.name},</h2>
+        <h3 class="text-secondary">Dashboard</h3>
+        <button class="btn btn-outline-warning" style="color: black;">Logout</button>
+        <a href="index.html" class="btn btn-outline-warning">Logout</a>
+    </div><br>
+    <div class="container" style="background-color: rgb(248, 248, 242); padding:10px">
+        <div class="container" >
+            <h2 class="bg-primary text-center p-1" style="color: white;">Child Vaccination Profile</h2>
+        </div>
+        <span class="" style="float: right; margin-right: 230px; margin-top: 50px;">
+            <img style="height: 200px;" src="QR-code.jpeg" alt=""><br><br>
+            <a href="appointments.html" target="_blank" class="btn btn-primary">Book vaccine</a><br> <br>
+            <a href="#vaccine-history" class="btn btn-secondary" style="color: white;">Vaccination History</a>
+        </span>
+        <div class=" container float-left">
+            <h3 class="text-secondary ml-4" Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>${u.childName}</span> </h3>
+            <h3 class="text-secondary ml-4">Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>${u.childAge}</span> </h3>
+            <h3 class="text-secondary ml-4">Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>${u.childGender}</span> </h3>
+            <h3 class="text-secondary ml-4">Date of Birth: <span>${u.childDOB}</span> </h3>
+            <h3 class="text-secondary ml-4">Blood Group: <span>${u.childBloodGrp}</span> </h3>
+        </div>
+        <div class="container float-right mr-5">
+            <img style="height: 180px" src="test1-child.jpg" alt="">
+        </div>
+        <br><hr><br>
+        <div id="vaccine-history" class="container">
+            <button class="btn btn-outline-primary">Vaccination History</button><br><br>
+            <div class="container text-center" >
+                <img class="text-center" style="height: 550px;" src="ansha-vaccine.png" alt="">
+            </div>
+        </div><br>
+    </div>
+</body>
+</html>
