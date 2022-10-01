@@ -75,6 +75,18 @@ const user = [
         pass:'456',
         image: 'test2-child.jpg',
         vaccimg: 'ananya-vaccine.png'
+    },
+    {
+        name: 'Saurav',
+        childName: 'Maulika',
+        childAge: '10',
+        childGender: 'female',
+        childDOB: '1/1/2012',
+        childBloodGrp: 'O+',
+        email: 'saurav@gmail.com',
+        pass:'123',
+        image: 'test2-child.jpg',
+        vaccimg: 'ananya-vaccine.png'
     }
 
 ];
